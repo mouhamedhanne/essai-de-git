@@ -12,13 +12,15 @@
         <nav>
             <h1>PODSHOP</h1>
             <div class="right">
-                <p>Acceuil</p>
-                <p>Présentation</p>
-                <p>Contact</p>
+                <a href="#"><p>Acceuil</p></a>
+                <a href="#"><p>Présentation</p></a>
+                <a href="#"><p>Contact</p></a>
                 <button>Acheter</button>
             </div>
         </nav>
+    </header>
 
+        <main>
         <section class="presentation-first" id="first">
             <div class="product-presentation">
                 <h1>Ecouter de la musique, c'est vivre sa passion</h1>
@@ -46,17 +48,17 @@
             </div>
 
         </section>
-    </header>
+    
 
     <section class="presentation-first" id="second">
         <div class="product-presentation">
             <p class="new">Nouveau produit disponible</p>
-            <h1>La nouvelle innovation</h1>
+            <h1>La nouvelle <span class="auto-typing"></span> </h1>
             <p>
                Avec un design élégant et moderne, avec la technologie de capteur optique et d'accélérometre intégrée, ces AirPods<br>
                sont incroyablement simple à utiliser il suffit de les sortir de leur étui de recharge et ils se connectent automatiquement<br>
                à votre appareil. Ces AirPods aussi sont fait pour s'adapter à vos oreilles grace à leur design ergonomique. Vous pouvez les<br>
-               porter confortablement pendant des heures sans ressentir de fatigue.
+               porter confortablement pendant des heures sans ressentir de la fatigue.
             </p>
             <button>Voir les spécification</button>
         </div>
@@ -64,6 +66,7 @@
             <img src="/image airpod/section1.jpg" width="300px">
         </div>
     </section>
+</main>
 
     <footer>
         <div class="column">
@@ -85,6 +88,24 @@
             <p>Instagram</p>
         </div>
     </footer>
+
+     <!--script pour l'effet clignotant-->
+     <section>
+        <div class="overlay"></div>
+        
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <script>
+            let typed = new Typed('.auto-typing', {
+                strings: ['innovation', 'AirPod Pro 5',],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+                fadeOut: true,
+                fadeOutClass: 'typed-fade-out',
+                fadeOutDelay: 500,
+            })
+        </script>
+    </section>
     
 </body>
 </html>

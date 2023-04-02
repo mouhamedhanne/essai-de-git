@@ -7,7 +7,7 @@
 
 body{
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: roboto;
     color: white;
     background: linear-gradient(#13181d, #20212e, #341b47);
 }
@@ -35,9 +35,15 @@ header nav .right p{
     cursor: pointer;
 }
 
-header nav .right p:hover{
-    color: white;
+header nav .right a{
+    text-decoration: none;
 }
+
+header nav .right p:hover{
+    color: var(--violet);
+    text-decoration: underline;
+}
+
 
 header nav .right button{
     padding: 5px 15px;
@@ -198,6 +204,10 @@ footer p:hover{
     footer .column{
         width: 80%;
     }
+}
+
+.presentation-first .product-presentation h1 .auto-typing{
+    color: var(--violet);
 }
 
 
